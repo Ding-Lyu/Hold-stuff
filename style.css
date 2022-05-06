@@ -1,4 +1,4 @@
-p {
+/* p {
   font-family: "comic Sans MS", cursive, sans-serif;
   font-weight: 400;
   text-indent: 32px;
@@ -12,4 +12,47 @@ a.survey {
 .pic {
   width: 550px;
   height: 350px;
+}
+
+.DongHua {
+  animation-name: cross;
+  animation-duration: 2s;
+  position: relative;
+}
+
+@keyframes cross {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: brown;
+  }
+} */
+
+/*ul, ol */
+
+div.container {
+  border: 3px solid black;
+  display: flex;
+  /* flex-direction: row-reverse; */
+}
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+.box1 {
+  background-color: chartreuse;
+}
+.box2 {
+  background-color: blueviolet;
+}
+.box3 {
+  background-color: cadetblue;
+}
+.box4 {
+  background-color: darkgoldenrod;
+}
+.box5 {
+  background-color: tomato;
 }
