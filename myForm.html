@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>问卷调查</title>
+  </head>
+  <body>
+    <form action="" method="">
+      <label for="myname">姓名:</label>
+      <input
+        id="myname"
+        type="text"
+        name="InputName"
+        required
+        value="Ding Lyu"
+        placeholder="Pls enter your name"
+      />
+      <br />
+      <label for="tele">电话:</label>
+      <input type="text" name="telephoneN" id="tele" />
+      <br />
+      <label for="email">邮件:</label>
+      <input type="email" name="email" id="email" value="" required />
+      <br />
+      <label for="age">年龄:</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        value="18"
+        required
+        min="0"
+        max="100"
+      />
+      <br />
+      <input
+        type="checkbox"
+        name="news"
+        id="checkbox"
+        value="newspaper"
+        checked
+      />
+      <label for="checkbox">订阅服务</label>
+      <br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name=""
+        id="password"
+        maxlength="12"
+        minlength="8"
+      />
+      <br />
+      <button type="submit">提交</button>
+    </form>
+  </body>
+</html>
