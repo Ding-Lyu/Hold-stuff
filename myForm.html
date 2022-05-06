@@ -18,6 +18,14 @@
         placeholder="Pls enter your name"
       />
       <br />
+      <label for="gender">性别：</label>
+      <select name="gender" id="gender" required>
+        <option value="male">男</option>
+        <option value="female">女</option>
+        <option value="other">other</option>
+      </select>
+
+      <br />
       <label for="tele">电话:</label>
       <input type="text" name="telephoneN" id="tele" />
       <br />
@@ -34,6 +42,24 @@
         min="0"
         max="100"
       />
+      <br />
+      <label for="area">Area:</label>
+      <input list="areaList" type="text" name="area" id="area" />
+      <datalist id="areaList">
+        <option value="Auckland">Auckland</option>
+        <option value="Queenstown">Queenstown</option>
+        <option value="Nelson">Nelson</option>
+      </datalist>
+      <br />
+      <label for="suggestion">给网站的建议：</label>
+      <br />
+      <textarea
+        name="suggestion"
+        id="suggestion"
+        cols="30"
+        rows="10"
+        placeholder="Thanks for suggestion!"
+      ></textarea>
       <br />
       <input
         type="checkbox"
