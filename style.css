@@ -40,30 +40,22 @@ div.container {
 .box {
   width: 200px;
   height: 200px;
+  flex-grow: 1;
+  flex-basis: 100px;
 }
 
 .box1 {
-  flex-basis: 100px;
-  flex-grow: 1;
   background-color: chartreuse;
 }
 .box2 {
-  flex-basis: 100px;
-  flex-grow: 1;
   background-color: blueviolet;
 }
 .box3 {
   background-color: cadetblue;
-  flex-grow: 1;
-  flex-basis: 100px;
 }
 .box4 {
   background-color: darkgoldenrod;
-  flex-grow: 1;
-  flex-basis: 100px;
 }
 .box5 {
   background-color: tomato;
-  flex-grow: 1;
-  flex-basis: 100px;
 }
