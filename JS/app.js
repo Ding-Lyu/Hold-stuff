@@ -5,4 +5,5 @@ console.log("IOS will be the next step");
 //alert
 // alert("You are in Index.html");
 //prompt
-prompt("Pls input");
+let name = prompt("Pls input");
+alert("Hello," + name + ". Welcome to this web site.");
