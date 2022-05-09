@@ -1,9 +1,24 @@
-//console.log
-console.log("Learning");
-console.log("IOS will be the next step");
+let answer = Math.floor(Math.random() * 100);
+console.log(answer);
 
-//alert
-// alert("You are in Index.html");
-//prompt
-let name = prompt("Pls input");
-alert("Hello," + name + ". Welcome to this web site.");
+let n1 = 0;
+let n2 = 99;
+
+while (true) {
+  let guess = prompt("Make your guess: " + n1 + " and " + n2);
+
+  if (guess < n1 || guess > n2) {
+    alert("Please input a valid number.");
+    continue;
+  }
+
+  if (guess == answer) {
+    alert("The secret number is: " + answer + ".");
+    alert("You win the game!");
+    break;
+  } else if (guess <= answer) {
+    n1 = guess;
+  } else if (guess >= answer) {
+    n2 = guess;
+  }
+}
