@@ -9,3 +9,5 @@ function stars(n) {
 console.log(stars(5));
 console.log(stars(3));
 console.log(stars(10));
+
+console.log(__filename);
