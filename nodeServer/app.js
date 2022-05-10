@@ -57,7 +57,9 @@ app.get("/:fruit/:someFruits", (req, res) => {
 
 //routing for everything
 app.get("*", (req, res) => {
-  res.send("Cannot find waht you ware looking for.");
+  res.status(404);
+  console.log(res.statusCode);
+  res.sendFile(path.join(__dirname, "error.html"));
 });
 
 app.listen(3000, () => {
