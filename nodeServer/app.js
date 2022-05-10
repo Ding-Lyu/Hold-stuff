@@ -24,9 +24,28 @@
 
 const express = require("express");
 const app = express();
+// 如果你从HTMl中传输数据以POST的形式，就要使用以下的声明：
+const path = require("path");
+// const bodyParser = require("body-parser");
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.get("/", (req, res) => {
+//   res.sendFile(path.join(__dirname, "index.html"));
+// });
+
+//routing for query ===  POST
+// app.post("/formHandling", (req, res) => {
+//   let { fullName, age } = req.body;
+//   res.send(
+//     `Hi ${fullName}, we have received your application with age of ${age}.`
+//   );
+// });
 
 app.get("/", (req, res) => {
-  res.send("You are on the homepage.");
+  res.sendFile(path.join(__dirname, "index.html"));
+});
+app.get("/formHandling", (req, res) => {
+  console.log(req.query);
+  res.send("Thanks for your submmition.");
 });
 
 app.get("/:fruit/:someFruits", (req, res) => {
@@ -35,8 +54,6 @@ app.get("/:fruit/:someFruits", (req, res) => {
   //以下就可以直接使用someFruits;
   res.send("You are looking for " + req.params.someFruits + ".");
 });
-
-//routing for query
 
 //routing for everything
 app.get("*", (req, res) => {
