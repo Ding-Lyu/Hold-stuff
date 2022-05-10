@@ -22,12 +22,27 @@
 //   console.log("Server is running on port 3501.");
 // });
 
-const cowsay = require("cowsay");
+const express = require("express");
+const app = express();
 
-console.log(
-  cowsay.say({
-    text: "I'm a Chinese moooodule",
-    e: "@@",
-    T: "U ",
-  })
-);
+app.get("/", (req, res) => {
+  res.send("You are on the homepage.");
+});
+
+app.get("/:fruit/:someFruits", (req, res) => {
+  // Destructing an object like:
+  // let {someFruits} = req.params;
+  //以下就可以直接使用someFruits;
+  res.send("You are looking for " + req.params.someFruits + ".");
+});
+
+//routing for query
+
+//routing for everything
+app.get("*", (req, res) => {
+  res.send("Cannot find waht you ware looking for.");
+});
+
+app.listen(3000, () => {
+  console.log("Server is running on port 3000.");
+});
