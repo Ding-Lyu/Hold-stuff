@@ -22,6 +22,26 @@
 //     n2 = guess;
 //   }
 // }
-let secondH1 = document.querySelectorAll(".second");
+// let secondH1 = document.querySelectorAll(".second");
 
-console.log(secondH1);
+// console.log(secondH1);
+
+// let luckyNumber = [1, 4, 6, 7, 5, 26, 745, 6425, 645];
+
+// luckyNumber.forEach(function checkNumber(num) {
+//   if (num > 5) {
+//     console.log(num);
+//   }
+// });
+
+// luckyNumber.forEach((num) => {
+//   if (num > 200) {
+//     console.log(num);
+//   }
+// });
+
+let body = document.querySelector("body");
+let myh1 = document.createElement("h1");
+myh1.innerText = "Hi i am Ding";
+
+body.appendChild(myh1);
