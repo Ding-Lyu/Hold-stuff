@@ -46,7 +46,15 @@
 
 // body.appendChild(myh1);
 
-let h1 = document.querySelector("h1");
-h1.addEventListener("click", (e) => {
-  console.log(e.target.innerHTML);
-});
+// let h1 = document.querySelector("h1");
+// h1.addEventListener("click", (e) => {
+//   console.log(e.target.innerHTML);
+// });
+
+// let friend = ["Ding", "Concordia", "Cooper"];
+
+// localStorage.setItem("friend", JSON.stringify(friend));
+
+let getFriend = JSON.parse(localStorage.getItem("friend"));
+
+console.log(getFriend);
