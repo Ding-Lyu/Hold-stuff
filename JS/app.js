@@ -40,8 +40,13 @@
 //   }
 // });
 
-let body = document.querySelector("body");
-let myh1 = document.createElement("h1");
-myh1.innerText = "Hi i am Ding";
+// let body = document.querySelector("body");
+// let myh1 = document.createElement("h1");
+// myh1.innerText = "Hi i am Ding";
 
-body.appendChild(myh1);
+// body.appendChild(myh1);
+
+let h1 = document.querySelector("h1");
+h1.addEventListener("click", (e) => {
+  console.log(e.target.innerHTML);
+});
