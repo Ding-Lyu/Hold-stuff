@@ -51,7 +51,6 @@
 //   console.log(e.target.innerHTML);
 // });
 
-<<<<<<< HEAD
 // let a1 = ["Ding", "Concordia", "Cooper"];
 // let a2 = ["Neo", "Yee", "Cado"];
 
@@ -104,12 +103,3 @@ class Student extends Person {
 let Ding = new Student("Ding Lyu", 26, 181, 83, "CS", 6.6);
 console.log(Ding);
 Ding.walk();
-=======
-// let friend = ["Ding", "Concordia", "Cooper"];
-
-// localStorage.setItem("friend", JSON.stringify(friend));
-
-let getFriend = JSON.parse(localStorage.getItem("friend"));
-
-console.log(getFriend);
->>>>>>> d87d20e367a1e8646c96552ebf20c2d4f93db993
