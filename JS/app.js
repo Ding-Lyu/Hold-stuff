@@ -46,7 +46,60 @@
 
 // body.appendChild(myh1);
 
-let h1 = document.querySelector("h1");
-h1.addEventListener("click", (e) => {
-  console.log(e.target.innerHTML);
-});
+// let h1 = document.querySelector("h1");
+// h1.addEventListener("click", (e) => {
+//   console.log(e.target.innerHTML);
+// });
+
+// let a1 = ["Ding", "Concordia", "Cooper"];
+// let a2 = ["Neo", "Yee", "Cado"];
+
+// let friends = a1.concat(a2);
+
+// console.log(friends);
+
+// function Person(name, age) {
+//   console.log(this);
+//   this.name = name;
+//   this.age = age;
+// }
+
+// Person.prototype.sayHi = function () {
+//   console.log(this.name + " says Hi.");
+// };
+
+// let Ding = new Person("Ding");
+
+// console.log(Ding + Ding.sayHi());
+
+class Person {
+  constructor(name, age, height, weight) {
+    this.name = name;
+    this.age = age;
+    this.height = height;
+    this.weight = weight;
+  }
+
+  sayHi() {
+    console.log(this.name + " says Hi.");
+  }
+
+  walk() {
+    console.log(this.name + " is walking.");
+  }
+}
+
+class Student extends Person {
+  constructor(name, age, height, weight, major, grade) {
+    super(name, age, height, weight);
+    this.major = major;
+    this.grade = grade;
+  }
+  study() {
+    console.log(this.name + " likes study.");
+  }
+}
+
+let Ding = new Student("Ding Lyu", 26, 181, 83, "CS", 6.6);
+console.log(Ding);
+Ding.walk();
